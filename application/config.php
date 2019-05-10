@@ -240,4 +240,17 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+
+    'swoole'=> [
+        // 队列 配置
+        'queue_type' => 'process',//task or process
+        'queue'      => [
+            "TestJob" => [
+                "delay"    => 0,//延迟时间
+                "sleep"    => 3,//休息时间
+                "maxTries" => 0,//重试次数
+                "nums"     => 3//进程数量
+            ]
+        ],
+    ],
 ];
