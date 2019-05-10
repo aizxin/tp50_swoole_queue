@@ -2,6 +2,8 @@
 namespace app\index\controller;
 
 
+use think\Queue;
+
 class Index
 {
     public function index()

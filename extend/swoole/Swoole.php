@@ -101,15 +101,15 @@ abstract class Swoole
                 // 监听队列的长度
                 'backlog' => 128,
                 // 异步任务
-                'task_worker_num' => 4,
+//                'task_worker_num' => 4,
                 // 防止 PHP 内存溢出
-                'task_max_request' => 0,
+//                'task_max_request' => 0,
                 // // SSL 支持
                 'dispatch_mode' => 2,
 
                 'debug_mode' => 1,
 
-                'log_file'     => Env::get('runtime_path') . 'swoole_server.log']);
+                'log_file'     => LOG_PATH . 'swoole_server.log']);
         }
 
         // 设置回调

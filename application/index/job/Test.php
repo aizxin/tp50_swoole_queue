@@ -38,7 +38,7 @@ class Test
     public function doOrderJob($data) {
         // 根据消息中的数据进行实际的业务处理...      
         Log::info('doOrderJob'.json_encode($data));
-        return true;
+        return false;
     }
     /**
      * 该方法用于接收任务执行失败的通知，你可以发送邮件给相应的负责人员
